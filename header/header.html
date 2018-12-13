@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/normalize/8.0.1/normalize.css">
+    <style>
+        body
+    {
+        margin: 0 0 0 0;
+        width: 100%;
+        min-width: 1220px;
+        font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+        background: #f4f5f5;
+    }
+    ul
+    {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    ul li
+    {
+        list-style: none;
+        color: ghostwhite;
+        font-size: 16px;
+        line-height: 50px;
+    }
+    .header
+    {
+        background: #27ae60;
+        height: 50px;
+    }
+    .top-nav
+    {
+        width: 1080px;
+        margin: 0 auto;
+    }
+    .fl
+    {
+        float: left;
+    }
+    .fr
+    {
+        float: right;
+    }
+    .clear-float:after,
+    .clear-float:before
+    {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .margin-m
+    {
+        margin: 0 5px 0 5px;
+    }
+    .j-nav a
+    {
+        text-decoration: none;
+        color: ghostwhite;
+    }
+    .j-nav a:hover
+    {
+        color: #ddd;
+    }
+    .search
+    {
+        outline:none;
+        border: 1px solid #27ae60;
+        height: 25px;
+        width: 190px;
+        border-radius: 5px;
+        position: relative;
+        top: 1px;
+        font-size: 14px;
+        position: relative;
+        top: -1px;
+    }
+    .search-img
+    {
+        width: 25px;
+        height: 24px;
+        background-image: url(./search.png);
+        background-repeat: no-repeat;
+        /* 让背景图不重复平铺 */
+        background-size: 20px 20px;
+        background-color: white;
+        outline: none;
+        border: none;
+        background-position: center;
+        /* 让背景图居中 */
+        position: relative;
+        right: 35px;
+        top: 5.3px;
+        cursor: pointer;
+    }
+    .positiionre
+    {
+        position: relative;
+    }
+    .n-font
+    {
+        color:#dbdbdb;
+        margin-right: 5px;
+        line-height: 50px;
+        font-size: 16px;
+    }
+    .n-img
+    {
+        position: relative;
+        top: 5px;
+        right: -2px;
+    }
+    .user-img
+    {
+        width: 32px;
+        height: 32px;
+        position: relative;
+        top: 7px;
+    }
+    
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="top-nav clear-float">
+            <div class="fl clear-float">
+                <img src="./v.png" alt="" class="fl n-img" width="32" height="32">
+                <span class="fl n-font">ains</span>
+            </div>
+            <ul class="fl clear-float j-nav">
+                <li class="fl margin-m"><a href="#">首页</a></li>
+                <li class="fl margin-m"><a href="#">新闻</a></li>
+                <li class="fl margin-m"><a href="#">文档</a></li>
+                <li class="fl margin-m"><a href="#">下载</a></li>
+                <li class="fl margin-m">
+                    <form action="indx.php" method="POST">
+                        <div class="positionre">
+                            <input type="text" class="search" placeholder=" 开始搜索">
+                            <input type="submit" class="search-img" value="">
+                        </div>
+                    </form>
+                </li>
+            </ul>
+            <ul class="fr clear-float j-nav ">
+                <li class="fl margin-m"><img src="user.png" alt="" class="user-img"></li>
+                <li class="fl margin-m"><a href="#">注册</a></li>
+                <li class="fl margin-m"><a href="#">登陆</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
