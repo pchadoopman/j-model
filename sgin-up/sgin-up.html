@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body
+    {
+        margin: 0 0 0 0;
+        width: 100%;
+        min-width: 1220px;
+        font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans","wenquanyi micro hei","Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
+        background: #f4f5f5;
+    }
+    /* 公用 */
+        ul
+    {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    ul li
+    {
+        list-style: none;
+    }
+    .clear-float:after,
+    .clear-float:before
+    {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .fl
+    {
+        float: left;
+    }
+    .fr
+    {
+        float: right;
+    }
+    form
+    {
+        margin: 0;
+    }
+    .margin-top-m
+    {
+        margin-top: 5px;
+    }
+    .margin-bottom-m
+    {
+        margin-bottom: 5px;
+    }
+    .margin-top-l
+    {
+        margin-top: 10px;
+    }
+    .margin-bottom-l
+    {
+        margin-bottom: 10px;
+    }
+    .margin-left-m
+    {
+        margin-left: 5px;
+    }
+    .margin-left-l
+    {
+        margin-left: 10px;
+    }
+    .margin-right-m
+    {
+        margin-right: 5px;
+    }
+    .margin-right-l
+    {
+        margin-right: 10px;
+    }
+    .j-button-default
+    {
+        height: 35px;
+        background: #50a1f8;
+        outline: none;
+        border: 1px solid #50a1f8;
+        color: white;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    .j-button-default:hover
+    {
+        background: #0973e6;
+        
+    }
+    .j-button-warning
+    {
+        height: 35px;
+        background: #fdbc2f;
+        outline: none;
+        border: 1px solid #fdbc2f;
+        color: white;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    .j-button-warning:hover
+    {
+        background: #ff9900;
+    }
+    /* 公用end */
+    .container
+    {
+        width: 1080px;
+        height: 400px;
+        background: #f4f5f5;
+        margin: 0 auto;
+        margin-top: 80px;
+        text-align: center;
+        overflow: hidden;
+    }
+    .user-bar
+    {
+        width: 900px;
+        height: 310px;
+        margin: 0 auto;
+        margin-top: 30px;
+        background: white;
+        position: relative;
+        overflow: hidden;
+    }
+    .model-input
+    {
+        width: 400px;
+        height: 25px;
+        border: 1px solid #cdcdcd;
+        outline: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;  
+    }
+    .model-input:focus
+    {
+        border-style:solid;
+        border-color: #39e681;
+    }
+    .img-model
+    {
+        width: 36px;
+        height: 27px;
+        border: 1px solid #cdcdcd;
+        border-right: none;
+        overflow: hidden;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;   
+    }
+    .user-error
+    {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        font-size: 14px;
+        background: #1ec764;
+        color: white;
+        padding: 5px 10px 5px 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="user-bar">
+        <div style="width:440px; margin:0 auto;">
+            <div class="clear-float margin-top-l margin-bottom-l" style="color: #1ec764;font-size: 18px;">
+            欢迎注册
+            </div>
+            <form action="#">
+                <div class="clear-float margin-top-l margin-bottom-l">
+                <div class="img-model fl"><img src="./username.png" alt="" width="18px" height="18px" style="margin-top: 3px;"></div>
+                <input type="text" class="model-input fl" placeholder=" 写个账号">
+                </div>
+                <div class="clear-float margin-top-l margin-bottom-l">
+                        <div class="img-model fl"><img src="./userpassword.png" alt="" width="18px" height="18px" style="margin-top: 3px;"></div>
+                        <input type="password" class="model-input fl" placeholder=" 填个密码">
+                </div>
+                <div class="clear-float margin-top-l margin-bottom-l">
+                        <div class="img-model fl"><img src="./useremail.png" alt="" width="18px" height="18px" style="margin-top: 3px;"></div>
+                        <input type="text" class="model-input fl" placeholder=" 输入邮箱">
+                </div>
+                <div class="clear-float margin-top-l margin-bottom-l">
+                        <div class="img-model fl"><img src="./usertoken.png" alt="" width="18px" height="18px" style="margin-top: 3px;"></div>
+                        <input type="text" class="model-input fl" placeholder=" 输入邮箱验证码">
+                </div>
+                <div class="clear-float margin-top-l margin-bottom-l">
+                        <input type="submit" value="确认注册" class="j-button-default margin-right-m">
+                    <input type="button" class="j-button-warning" value="重置数据">
+                </div>
+            </form>
+        </div>
+        <div class="" style="overflow: hidden;">
+        <div class="clear-float  margin-bottom-l" style="color:#cdcd;font-size:14px">
+            第三方登陆
+        </div>
+        <ul class="clear-float" style="width:70px;margin:0 auto;">
+            <li class="fl margin-right-m"><span><img src="./user-github.png" alt="" width="20px" height="20px"></span></li>
+            <li class="fl margin-right-m"><span><img src="./user-weixin.png" alt="" width="20px" height="20px"></span></li>
+            <li class="fl"><span><img src="./user-weibo.png" alt="" width="20px" height="20px"></span></li>
+        </ul>
+        </div>
+        <div class="user-error">
+            <div>一切的开始都是简单而伟大</div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
